@@ -20,6 +20,10 @@ class ViewController: UIViewController
         
         let digit = sender.currentTitle!
         
+        if digit == "." && doesNumberHaveDecimal(display.text!) {
+            return
+        }
+        
         if userIsInTheMiddleOfTypingANumber {
             display.text = display.text! + digit
         } else {
@@ -27,6 +31,14 @@ class ViewController: UIViewController
             display.text = digit
         }
         
+    }
+    
+    func doesNumberHaveDecimal(numberString: String) ->Bool {
+        if display.text!.rangeOfString(".") != nil {
+            return true
+        } else {
+            return false
+        }
     }
 
     var operandStack: Array<Double> = Array<Double>()
@@ -62,6 +74,9 @@ class ViewController: UIViewController
         case "+": performOperation { $0 + $1 }
         case "−": performOperation { $1 - $0 }
         case "√": performOtherOperation { sqrt($0) }
+        case "sin": performOtherOperation { sin($0) }
+        case "cos": performOtherOperation { cos($0) }
+        
         default: break
         }
     }

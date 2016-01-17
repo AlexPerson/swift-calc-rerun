@@ -154,15 +154,17 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxQ-QF-mVK">
                                 <rect key="frame" x="469.5" y="205.5" width="102.5" height="123.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="cos"/>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s8a-VQ-2Gv"/>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="05F-BU-hwG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeX-17-dpY">
                                 <rect key="frame" x="469.5" y="337" width="102.5" height="123.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="sin"/>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B38-4E-eFk"/>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9V-iw-Pds"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUO-eY-8sc">
@@ -176,6 +178,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmu-Wt-KCo">
                                 <rect key="frame" x="28" y="468.5" width="102.5" height="123.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KG5-hT-VyY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
