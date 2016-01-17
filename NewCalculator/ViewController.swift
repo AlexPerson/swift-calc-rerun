@@ -42,6 +42,12 @@ class ViewController: UIViewController
     }
 
     var operandStack: Array<Double> = Array<Double>()
+   
+    @IBAction func appendPi() {
+        userIsInTheMiddleOfTypingANumber = false
+        display.text = String(M_PI)
+        print("OperandStack = \(operandStack)")
+    }
     
     @IBAction func enter() {
         userIsInTheMiddleOfTypingANumber = false

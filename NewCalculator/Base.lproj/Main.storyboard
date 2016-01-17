@@ -147,7 +147,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wT8-0H-QqZ">
                                 <rect key="frame" x="469.5" y="74" width="102.5" height="123.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="π"/>
                                 <connections>
+                                    <action selector="appendPi" destination="BYZ-38-t0r" eventType="touchUpInside" id="vn5-46-GBq"/>
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="98n-Wz-d6t"/>
                                 </connections>
                             </button>
